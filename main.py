@@ -9,7 +9,7 @@ def main():
     max_iterations = 10000
     executions = 3
     for _ in range(executions):
-        p = PSO(rastrigin, [(-5.12, 5.12) for _ in range(30)], 30, max_iterations, 0.3, "LOCAL")
+        p = PSO(rastrigin, [(-5.12, 5.12) for _ in range(30)], 30, max_iterations, 0.5, "LOCAL")
         print(p.best_position)
         print(p.best_error)
         error_all.append(p.error_history)

@@ -58,7 +58,7 @@ class Particle:
 
     # update new particle velocity - Linear Decreasing Inertia Weight
     def update_velocity_linear_decreasing(self, pos_best_g, max_iterations, iteration):
-        w_max = 0.3
+        w_max = 0.5
         w_min = 0.05
         c1 = 2.05  # cognative constant
         c2 = 2.05  # social constant
